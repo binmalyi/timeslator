@@ -19,13 +19,13 @@ const formulas = {
  * @property {string} from
  * @property {string} to
  * @param {Number} time
- * @param {options} option choices for convertion. {from: "seconds", to: "milliseconds"}
+ * @param {options} option eg. { from: "milliseconds", to: "seconds" }
  * @return {Number}
  */
 
-function timeslator(time, {from, to}){
+export function timeslator(time, {from, to}){
     const error = new Error('⛔ No matches were found!');
-    const filteredKeys = Object.keys(formulas).filter(property => property.startsWith(from[0]));
+    const filteredKeys = Object.keys(formulas).filter(property => property.startsWith(from.toLowerCase()[0]));
 
     if (filteredKeys.length === 0) throw error;
 
@@ -54,5 +54,3 @@ function timeslator(time, {from, to}){
         continue;
     };
 };
-
-timeslator(24, {from: 'h', to: 'm'})
