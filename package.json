@@ -1,0 +1,12 @@
+{
+  "name": "timeslator",
+  "version": "1.0.0",
+  "description": "Converts the given time to another as from the options chosen by the user",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Malyi",
+  "license": "MIT",
+  "type": "module"
+}
