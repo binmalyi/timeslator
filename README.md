@@ -8,7 +8,7 @@ import { timeslator } from 'timeslator';
 timeslator(24, { from: 'h', to: 'm'}) // 1440
 ```
 
-First parameter is the **time** and Second parameter is the **options**.\n
+First parameter is the **time** and Second parameter is the **options**.\
 **options** must either be in plural/short form otherwise an error will be thrown.
 ```perl
 // Correct Syntax ✅
@@ -20,7 +20,7 @@ First parameter is the **time** and Second parameter is the **options**.\n
 {from: 'millisecond', to: 'seconds'} // Error: ⛔ No matches were found!
 ```
 
-**options** are: <_Milliseconds_>, <_Seconds_>, <_Minutes_> and <_Hours_>\n
+`options:` <_Milliseconds_>, <_Seconds_>, <_Minutes_> and <_Hours_>\
 `Tip:` they are case-insensitive
 
 ## Installation
